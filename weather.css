@@ -1,0 +1,392 @@
+/* #hed {
+   position: absolute;
+     top : 200px ;
+     right : 500px ; 
+     font-size : 4rem ;
+     color : white ; 
+} 
+ #hed{
+
+    position:absolute;
+
+    top:120px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:5rem;
+
+    color:white;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    letter-spacing:8px;
+
+    text-shadow:
+        3px 3px 8px black,
+        0px 0px 25px skyblue,
+        0px 0px 40px deepskyblue;
+
+}
+#bg {
+    
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFZNNMyXzg5Hpk6Ps4jWsviZauficE4ChYXfrGxql2w&s=10") ;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+ #but {
+    height: 100px ;
+    width: 200px;
+    border : 2px solid black ;
+    border-radius: 45%;
+    background-color: rgb(240, 240, 246) ;
+    position : absolute ;
+    top : 500px ;
+     right : 500px ; 
+   
+} 
+ #search {
+    position: absolute;
+    background-color: white ;
+    font-size: 20px ;
+    right : 10px ; 
+
+} 
+ #searchbox {
+    position : absolute ; 
+    display :flex ;
+    align-items : center ;
+    background-color: white;
+    border-radius: 30px;
+    padding : 15px 20px ;
+    width : 500px ; 
+    left:180% ; 
+    transform: translateX(-50%);
+    margin-top : -50px ; 
+
+
+ }
+ #mfglass{
+    color : grey ;
+    font-size : 18px ;
+    margin-left : 10px , 
+ }
+ 
+ #searchbox{
+
+position:absolute;
+
+top:1px;
+
+right:100px;
+
+width:300px;
+
+height:50px;
+
+font-size:18px;
+
+padding:10px;
+
+border-radius:25px;
+}
+#but{
+
+    position:absolute;
+
+    top:400px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:220px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(90deg,#00B4DB,#0083B0);
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0px 8px 20px rgba(0,0,0,0.3);
+
+}
+/* #mainpage{
+    display:none ;
+    
+    
+} 
+ #mainpage {
+    display:none;
+    position:absolute;
+    top:100px;
+    left:20%;
+    transform:translateX(-50%);
+
+
+}
+
+/* #cityname{
+    
+    color : black ;
+    border : 2px solid black ; 
+}
+#temp{
+ color : black ;
+    border : 2px solid black ; 
+}
+#wind{
+ color : black ;
+    border : 2px solid black ; 
+}
+#humid{
+ color : black ;
+    border : 2px solid black ; 
+} 
+ #cityname,#temp,#wind,#humidity{
+     color:rgb(15, 174, 237);
+    border:none;
+    padding:15px;
+    margin:0;
+    font-size:1.5rem;
+    font-weight:bold;
+    
+
+ }
+ .weather2 {
+    display : flex ;
+   align-items: center;
+ gap : 15px ; 
+ margin : 25px 0px ;
+ color : rgb(199, 92, 25) ;
+
+}
+
+
+
+#searchBtn {
+   
+   color : white ; 
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+}
+#loc,
+#tem,
+#wnd,
+#hmd{
+    color: white;
+}
+#loca,
+#tp,
+#wd,
+#hd{
+
+    height:100px;
+
+    border:1px solid rgba(255,255,255,0.3);
+
+    background-color:rgba(255,255,255,0.3);
+
+    backdrop-filter:blur(12px);
+
+} */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#bg{
+    background-image:url("https://images.unsplash.com/photo-1501973801540-537f08ccae7b?q=80&w=1600");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:100vh;
+}
+
+#homepage{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+#hed{
+    color:white;
+    font-size:5rem;
+    letter-spacing:10px;
+    margin-bottom:60px;
+    text-shadow:
+    3px 3px 10px black,
+    0 0 20px skyblue;
+}
+
+#but{
+    width:220px;
+    height:60px;
+    border:none;
+    border-radius:35px;
+    font-size:22px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    background:linear-gradient(90deg,#00B4DB,#0083B0);
+    transition:.3s;
+}
+
+#but:hover{
+    transform:scale(1.05);
+}
+
+#mainpage{
+    display:none;
+    width:100%;
+    padding-top:40px;
+    flex-direction:column;
+    align-items:center;
+}
+
+#searchbox{
+    width:600px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px 20px;
+    margin:auto;
+    border-radius:35px;
+    background:rgba(255,255,255,.25);
+    backdrop-filter:blur(15px);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+#mfglass{
+    color:white;
+    font-size:20px;
+}
+
+#search{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:white;
+    font-size:18px;
+}
+
+#search::placeholder{
+    color:white;
+}
+
+#searchBtn{
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    background:linear-gradient(90deg,#00B4DB,#0083B0);
+}
+
+#searchBtn:hover{
+    transform:scale(1.05);
+}
+
+#weather-bg{
+    width:600px;
+    margin:40px auto;
+}
+
+#loca,
+#tp,
+#wd,
+#hd{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    height:90px;
+    margin-bottom:20px;
+    padding:0 25px;
+    border-radius:20px;
+    background:rgba(255,255,255,.22);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.35);
+    transition:.3s;
+}
+
+#loca:hover,
+#tp:hover,
+#wd:hover,
+#hd:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.weather2 i{
+    font-size:28px;
+    color:#ffb347;
+}
+
+#cityname,
+#temp,
+#wind,
+#humidity{
+    color:white;
+    font-size:28px;
+    min-width:170px;
+}
+
+#loc,
+#tem,
+#wnd,
+#hmd{
+    color:white;
+    font-size:26px;
+    font-weight:bold;
+}
+
+@media(max-width:700px){
+
+    #searchbox{
+        width:90%;
+    }
+
+    #weather-bg{
+        width:90%;
+    }
+
+    #hed{
+        font-size:3rem;
+    }
+
+}
